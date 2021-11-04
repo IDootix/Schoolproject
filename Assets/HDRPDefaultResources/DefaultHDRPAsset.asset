@@ -160,14 +160,14 @@ MonoBehaviour:
       data2: 4539628425463136280
     lodBias: 1
     lodBiasMode: 0
-    lodBiasQualityLevel: 0
+    lodBiasQualityLevel: 2
     maximumLODLevel: 0
     maximumLODLevelMode: 0
-    maximumLODLevelQualityLevel: 0
+    maximumLODLevelQualityLevel: 2
     sssQualityMode: 0
-    sssQualityLevel: 1
+    sssQualityLevel: 2
     sssCustomSampleBudget: 20
-    materialQuality: 0
+    materialQuality: 4
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
     bitDatas:
       data1: 139742655312669
