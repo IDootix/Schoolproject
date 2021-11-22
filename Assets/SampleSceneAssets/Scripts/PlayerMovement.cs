@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 12f;
-    public float gravity = -10f;
-    public float jumpHeight = 2f;
+    public float gravity = -2f;
+    public float jumpHeight = 5f;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -66,11 +67,11 @@ public class PlayerMovement : MonoBehaviour
         jumpPressed = Input.GetButtonDown("Jump");
 #endif
 
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        isGrounded = controller.isGrounded;
 
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = -6f;
         }
 
         Vector3 move = transform.right * x + transform.forward * z;
