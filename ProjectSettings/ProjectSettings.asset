@@ -135,8 +135,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 0}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -633,11 +632,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template_HD
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\Linus\Desktop\Schoolproject\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 80bc803a8df0d801
   metroApplicationDescription: Template_HD
   wsaImages: {}
   metroTileShortName: 
