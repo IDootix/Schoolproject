@@ -11,7 +11,6 @@ public class ThirdPersonMovement : MonoBehaviour
    public float turnSmoothTime = 0.1f;
    float trunSmoothVelocity;
 
-    // Update is called once per frame
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
