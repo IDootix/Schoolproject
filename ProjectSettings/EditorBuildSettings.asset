@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Basde_testing.unity
     guid: 780219f9bca740b4e967c3cad295d7b6
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 05bb06fc60ce11049bae82798fd0a90e, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: ecfca9430f9f96d43974ccb9483a7f6c, type: 2}
