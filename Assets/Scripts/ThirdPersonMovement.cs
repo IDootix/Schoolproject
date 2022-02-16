@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ThirdPersonMovement : MonoBehaviour
 {
    public CharacterController controller;
    public Transform cam;
    public float speed = 6f;
+   public float jumpForce = 2.0f;
 
    public float turnSmoothTime = 0.1f;
    float trunSmoothVelocity;
@@ -15,6 +17,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+        //bool jump = Input.GetButton("Spacebar");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
         if (direction.magnitude >= 0.1f)
@@ -25,5 +28,5 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-    }
+    }             
 }
