@@ -27,14 +27,10 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+        
         if (controller.isGrounded && Input.GetButtonDown("Jump"))
         {
             controller.Move(Vector3.up * jumpForce);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
         }
     }             
 }
