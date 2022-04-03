@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.GameManager;
 
 public class PlayerFunctions : MonoBehaviour {
 
@@ -45,7 +46,7 @@ public class PlayerFunctions : MonoBehaviour {
         GameManager.instance.Load();
     }
 
-    public void Jetpack()
+    /* public void Jetpack()
     {
         // Enable the jetpack
         // This is a very simple function that enables the jetpack and disables the gravity
@@ -67,7 +68,7 @@ public class PlayerFunctions : MonoBehaviour {
         GetComponent<PlayerMovement>().enabled = true;
         GetComponent<Rigidbody>().useGravity = true;
         GetComponent<Jetpack>().enabled = false;
-    }
+    } */
     public void Controls()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -90,7 +91,7 @@ public class PlayerFunctions : MonoBehaviour {
             LoadGame();
         }
 
-        if (Input.GetKeyDown(KeyCode.F4))
+       /*  if (Input.GetKeyDown(KeyCode.F4))
         {
             Jetpack();
         }
@@ -98,6 +99,6 @@ public class PlayerFunctions : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.F5))
         {
             NormalMovement();
-        }
+        } */
     }
 }
