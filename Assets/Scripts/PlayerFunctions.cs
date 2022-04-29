@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.GameManager;
 
-public class PlayerFunctions : MonoBehaviour {
+
+public class PlayerFunctions : MonoBehaviour
+{
 
     public void EstimatePlaytime()
     {
