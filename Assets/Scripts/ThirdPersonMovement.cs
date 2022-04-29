@@ -13,6 +13,16 @@ public class ThirdPersonMovement : MonoBehaviour
    public float turnSmoothTime = 0.1f;
    float trunSmoothVelocity;
 
+   public float CurrentHealth;
+   public float MaxHealth = 100f;
+   public float HealthRegen = 0.3f;
+
+
+   void Start()
+   {  
+        CurrentHealth = MaxHealth;
+   }    
+
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -31,6 +41,11 @@ public class ThirdPersonMovement : MonoBehaviour
         if (controller.isGrounded && Input.GetButtonDown("Jump"))
         {
             controller.Move(Vector3.up * jumpForce);
+        }
+
+        if (CurrentHealth < MaxHealth)
+        {
+            CurrentHealth += HealthRegen * Time.deltaTime;
         }
     }             
 }
